@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Email Search</title>
+    <link href="../styles/bootstrap.css" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <script src="../script/jquery.min.js"></script>
+    <script src='../script/emailFinder.js'></script>
+</head>
+
+<body>
+    <section class="dashboard">
+        <div class="container">
+            <nav class="navbar navbar-light justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <img src="../styles/assets/Logo.svg" alt="">
+                </a>
+                <div>
+                    <a class="nav-item mx-3" href="#"><img src="../styles/assets/icn_search.svg" alt=""></a>
+                    <a class="nav-item" href="#"><img src="../styles/assets/icn_person.svg" alt=""></a>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="empty-result">
+        <h1 class="text-center mb-4 website-title result-title">0 Results</h1>
+        <h5>Try starting a new search below</h5>
+    </section>
+    <section class="result-container">
+        <div class="container py-4">
+            <h1 class="text-center mb-4 website-title result-title">1 Results</h1>
+            <h5 class="text-center">Look at the result below to see the details of the person you’re searched for.</h5>
+            <div class="row">
+                <div class="col-9 mx-auto my-5 p-5 user-data-container">
+                    <div class="product-result"><img src="../styles/assets/icn_person.svg" alt=""></div>
+                    <div class="product-data">
+                        <h2 class="user-name"><span id="userName">John Smith</span>, <span id="userAge">35</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="row">
+                            <div class="col">
+                                <h4>Address</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h4>Email</h4>
+                                <p id="userEmailId">loremipsum@dolorsit.com</p>
+                            </div>
+                            <div class="col">
+                                <h4>Phone Number</h4>
+                                <div class="phoneNo">(555) 555-5555</div>
+                                <div class="phoneNo">(555) 555-5555</div>
+                                <div class="mb-3 phoneNo">(555) 555-5555</div>
+                                <h4>Relative</h4>
+                                <div id="relative1">Jane Smith</div>
+                                <div id="relative2">John Smith Jr</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dashboard">
+        <div class="container py-5">
+            <h1 class="text-center text-white mb-4 website-title">Can’t Find The Right Person?</h1>
+            <h5 class="text-center text-white mb-4"> <span class="yellow-text-color">Try Again</span> - Make a new search</h5>
+            <form class="mb-3 needs-validation" name="myForm" method="get" action="result.html" method="POST">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control p-2 mb-3 email-input" placeholder="EMAIL" aria-label="Email" aria-describedby="Email" id="emailId" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid email.
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <input class="btn btn-go w-100 text-center p-2" type="submit" value="GO!">
+                    </div>
+                </div>
+            </form>
+            <h6 class="yellow-text-color my-2"> <img class="mr-1" src="../styles/assets/lock.svg" alt="">&ensp;&ensp;Enter Any Email Address. They won't be notified.</h6>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-9 footer-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="col-3 m-auto text-center">
+                    <a class="footer-link" href="">Terms | Privacy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
